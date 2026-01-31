@@ -1,0 +1,84 @@
+:root {
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --danger: #ef4444;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --card: #020617;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #3b82f6;
+  --danger: #f87171;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+* {
+  transition: background-color 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================
+   MOBILE RESPONSIVE FIXES
+====================== */
+
+@media (max-width: 768px) {
+
+  /* wrapper padding override */
+  div[style*="max-width: 1200px"] {
+    padding: 20px !important;
+  }
+
+  /* stack filter buttons */
+  button {
+    min-height: 44px;
+  }
+
+  /* form stacks vertically */
+  form {
+    flex-direction: column !important;
+  }
+
+  form input,
+  form select,
+  form button {
+    width: 100% !important;
+  }
+
+  /* grid becomes single column */
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* focus overlay padding */
+  div[style*="box-shadow: 0 20px 40px"] {
+    padding: 20px !important;
+  }
+
+  /* timer size smaller on mobile */
+  div[style*="font-size: 48px"] {
+    font-size: 34px !important;
+  }
+}
