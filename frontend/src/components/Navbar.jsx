@@ -9,13 +9,12 @@ export default function Navbar() {
   );
   const [scrolled, setScrolled] = useState(false);
 
-  // Apply theme
+  
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  // Detect scroll for shadow
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 10);
