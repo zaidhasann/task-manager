@@ -8,7 +8,6 @@ export default function Dashboard() {
   const [error, setError] = useState("");
   const [filter, setFilter] = useState("all");
 
-  // ✅ Focus Mode states
   const [focusTask, setFocusTask] = useState(null);
   const [timeLeft, setTimeLeft] = useState(25 * 60);
   const [isRunning, setIsRunning] = useState(false);
@@ -25,7 +24,7 @@ export default function Dashboard() {
     fetchTasks();
   }, []);
 
-  // ✅ Pomodoro timer effect
+
   useEffect(() => {
     if (!isRunning) return;
 
@@ -128,7 +127,6 @@ export default function Dashboard() {
       <div style={styles.wrapper}>
         <h1 style={styles.heading}>My Tasks</h1>
 
-        {/* 🔥 FOCUS MODE OVERLAY */}
         {focusTask && (
           <div style={styles.focusOverlay}>
             <h2>Focus Mode</h2>
