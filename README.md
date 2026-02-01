@@ -9,8 +9,8 @@ This project was built as part of a Full Stack Development skill assessment.
 
 ## 🚀 Live Demo
 
-Frontend: https://YOUR-FRONTEND.onrender.com  
-Backend API: https://YOUR-BACKEND.onrender.com/api
+Frontend: https://task-managerrr.onrender.com 
+Backend API: https://task-manager-v0ov.onrender.com
 
 ---
 
