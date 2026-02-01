@@ -40,9 +40,7 @@ body {
   }
 }
 
-/* ======================
-   MOBILE RESPONSIVE FIXES
-====================== */
+
 
 @media (max-width: 768px) {
 
@@ -67,17 +65,17 @@ body {
     width: 100% !important;
   }
 
-  /* grid becomes single column */
+
   div[style*="grid-template-columns"] {
     grid-template-columns: 1fr !important;
   }
 
-  /* focus overlay padding */
+
   div[style*="box-shadow: 0 20px 40px"] {
     padding: 20px !important;
   }
 
-  /* timer size smaller on mobile */
+
   div[style*="font-size: 48px"] {
     font-size: 34px !important;
   }
